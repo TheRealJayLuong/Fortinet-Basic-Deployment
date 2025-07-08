@@ -11,7 +11,7 @@
 #### NAT Gateway 100.1.1.0/24    NAT Device  Connected to Internet
 =================================
 # Fortinet Firewall Configuration Outline
-1. Interface Setup
+1.Interface Setup
 port1 → WAN (171.1.1.x)
 
 port2 → LAN (SW_User, handling VLAN 100 & 200)
@@ -20,14 +20,14 @@ port4 → DMZ (SW_DMZ)
 
 mgmt → Management access (192.168.1.x)
 
-2. VLAN Creation
+2.VLAN Creation
 Create VLAN interfaces on port2:
 
 VLAN 100: Admin
 
 VLAN 200: Marketing
 
-3. Policy Rules
+3.Policy Rules
 LAN ➜ DMZ: Allow HTTP/HTTPS from Admin/Marketing to Web Server
 
 LAN ➜ WAN: Allow internal access to external resources
@@ -36,12 +36,12 @@ DMZ ➜ WAN: Allow outbound traffic with restrictions
 
 NOC ➜ All: Permit full access for management and testing
 
-4. Security Profiles
+4.Security Profiles
 Apply Antivirus, Web Filtering, and IPS profiles as appropriate.
 
 Use SSL Inspection for outbound connections, if supported in lab.
 
-5. NAT & Routing
+5.NAT & Routing
 Configure NAT on outbound policies from LAN and DMZ to WAN.
 
 Setup static routes for Internet access through NAT Gateway.
