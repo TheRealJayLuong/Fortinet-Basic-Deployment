@@ -1,7 +1,7 @@
 # Fortinet-Basic-Deployment
 #### This lab simulates a Fortinet firewall deployment in a multi-segment network environment. The architecture includes core components such as a Network Operations Center (NOC), Local Area Network (LAN), Demilitarized Zone (DMZ), and Wide Area Network (WAN), with access to the Internet through a NAT gateway. This topology is ideal for testing policies, routing, segmentation, and firewall security functions.
 =================================
-# 🌐 Network Segments & Components
+# Network Segments & Components
 #### Segment Subnet  Devices Connectivity
 #### NOC 192.168.1.0/24  MGMT PC Connected via eth1 to mgmt switch
 #### LAN - VLAN 100  192.168.100.0/24    Admin PC    Connected via eth1 to SW_User on e0/1
@@ -10,7 +10,7 @@
 #### WAN 171.1.1.0/24    Fortinet Firewall   Connected via port1 (WAN interface)
 #### NAT Gateway 100.1.1.0/24    NAT Device  Connected to Internet
 =================================
-# 🔐 Fortinet Firewall Configuration Outline
+# Fortinet Firewall Configuration Outline
 1. Interface Setup
 port1 → WAN (171.1.1.x)
 
