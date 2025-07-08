@@ -3,12 +3,12 @@
 =================================
 # 🌐 Network Segments & Components
 #### Segment Subnet  Devices Connectivity
-### NOC 192.168.1.0/24  MGMT PC Connected via eth1 to mgmt switch
-### LAN - VLAN 100  192.168.100.0/24    Admin PC    Connected via eth1 to SW_User on e0/1
-### LAN - VLAN 200  192.168.200.0/24    Marketing PC    Connected via eth1 to SW_User on e0/2
-### DMZ 192.168.201.0/24    Web Server  Connected via e0/1 to SW_DMZ
-### WAN 171.1.1.0/24    Fortinet Firewall   Connected via port1 (WAN interface)
-### NAT Gateway 100.1.1.0/24    NAT Device  Connected to Internet
+#### NOC 192.168.1.0/24  MGMT PC Connected via eth1 to mgmt switch
+#### LAN - VLAN 100  192.168.100.0/24    Admin PC    Connected via eth1 to SW_User on e0/1
+#### LAN - VLAN 200  192.168.200.0/24    Marketing PC    Connected via eth1 to SW_User on e0/2
+#### DMZ 192.168.201.0/24    Web Server  Connected via e0/1 to SW_DMZ
+#### WAN 171.1.1.0/24    Fortinet Firewall   Connected via port1 (WAN interface)
+#### NAT Gateway 100.1.1.0/24    NAT Device  Connected to Internet
 =================================
 # 🔐 Fortinet Firewall Configuration Outline
 1. Interface Setup
